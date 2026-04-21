@@ -41,17 +41,17 @@ my-app
 - Expo Go (celular) ou emulador  
 ---
 ## Instalação
-Entre na pasta do projeto:
+- Entre na pasta do projeto:
 
 cd my-app
 
-Instale as dependências:
+- Instale as dependências:
 
 npm install
 
 ---
 ## Executando o projeto
-Inicie o projeto com limpeza de cache e tunnel:
+- Inicie o projeto com limpeza de cache e tunnel:
 
 npx expo start -c –tunnel
 
@@ -155,8 +155,9 @@ npm install
 
 ---
 ## Autores
-Projeto desenvolvido para fins acadêmicos.
-Alunos: Alice Xavier, Gustavo Xavier, Júlia Clovandi, Luís Felipe e Yuri Clovandi. 
+- Projeto desenvolvido para fins acadêmicos.
+
+- Alunos: Alice Xavier, Gustavo Xavier, Júlia Clovandi, Luís Felipe e Yuri Clovandi. 
 ---
 
 
