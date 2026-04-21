@@ -1,7 +1,10 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+
+// 1. Importando a função para inicializar o banco de dados (Passo 3)
+import { setupDatabase } from './src/database';
 
 // Importando todas as telas do nosso arquivo src/screens.tsx
 import {
@@ -14,6 +17,12 @@ import {
 const Stack = createStackNavigator();
 
 export default function App() {
+
+  // 2. Inicializa a tabela do banco de dados quando o aplicativo é aberto (Passo 3)
+  useEffect(() => {
+    setupDatabase();
+  }, []);
+
   return (
     // O GestureHandlerRootView DEVE ser o pai de todos e ter flex: 1
     <GestureHandlerRootView style={{ flex: 1 }}>
